@@ -1,0 +1,337 @@
+@import url(
+"https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  font-family: 'andika';
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  text-transform: none;
+  transition: all 0.2s linear;
+}
+
+:root {
+  --black: black;
+  --purple: purple;
+  --light-color: #666;
+  --box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+  --background-color1: #fafaff;
+  --background-color2: #ffffff;
+  --background-color3: #ededed;
+  --background-color4: #cad7fda4;
+  --primary-color: #4b49ac;
+  --secondary-color: #0c007d;
+  --border-color: #3f0097;
+  --one-use-color: #3f0097;
+  --two-use-color: #5500cb;
+  --dark-color: #101010;
+}
+
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+  font-family: Arial, sans-serif;
+  background-size: cover;
+/*background-image: url(55402050.jpg);*/
+background-color: #3498db;
+margin: 0;
+padding: 0;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+
+.logo {
+  font-size: 40px;
+  font-weight: 600;
+  color: #090909; 
+  padding-right: 200px;
+  align-self: baseline;
+}
+
+.logosec {
+  align-items: flex-start;
+}
+
+header {
+  top: 0;
+  font-size: x-large;
+  left: 0;
+  right: 0;
+  display: flex;
+  padding: 2rem 9%;
+  height: 80px;
+  justify-content: space-between;
+  width: 100vw;
+  background-color: var(--background-color1);
+  position: fixed;
+  z-index: 1000;
+  box-shadow: var(--box-shadow);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 10px;
+}
+
+.headbar a {
+  font-size: 1.7rem;
+  font-weight: 900;
+  color: #101010;
+  border-radius: 5rem;
+  padding: .5rem 1.5rem;
+  color: var(--dark-color);
+}
+
+.headbar a:hover {
+  color: #101010;
+  background: linear-gradient(120deg, #a5d7eb 40%, #a6d2f1);
+}
+
+.header .menubtn button {
+  padding: 10px 45px;
+  text-align: center;
+  font-size: 14px;
+  color: #ffffff;
+  border: none;
+  background-image: linear-gradient(to right, #649bff, #0070fa, #649bff);
+  border-radius: 10px;
+}
+
+.logo {
+  font-size: 27px;
+  font-weight: 600;
+  color: rgb(5, 5, 5);
+}
+
+.icn {
+  height: 30px;
+}
+
+.menuicn {
+  cursor: pointer;
+}
+
+.searchbar,
+.message,
+.logosec {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.searchbar2 {
+  display: none;
+}
+
+.logosec {
+  gap: 60px;
+}
+
+.main-container {
+  border-radius: 20px;
+  display: flex;
+  width: 100vw;
+  position: relative;
+  top: 70px;
+  z-index: 1;
+}
+
+.dpicn {
+  height: 42px;
+}
+
+.main {
+  height: calc(100vh - 70px);
+  width: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding: 40px 30px 30px 30px;
+}
+
+.main::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(to bottom, rgb(0, 0, 85), rgb(0, 0, 50));
+}
+
+.main::-webkit-scrollbar {
+  width: 5px;
+}
+
+.main::-webkit-scrollbar-track {
+  background-color: #9e9e9eb2;
+}
+
+.box-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.nav {
+  min-height: 91vh;
+  width: 250px;
+  background-color: var(--background-color2);
+  position: absolute;
+  top: 0px;
+  left: 0; /* Added 'px' unit */
+  box-shadow: 1px 1px 10px rgba(198, 189, 248, 0.825);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  padding: 30px 0 20px 10px;
+}
+
+.navcontainer {
+  height: calc(100vh - 70px);
+  width: 250px;
+  position: relative;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  transition: all 0.5s ease-in-out;
+}
+
+.navcontainer::-webkit-scrollbar {
+  display: none;
+}
+
+.navclose {
+  width: 80px;
+}
+
+.nav-option {
+  width: 250px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  padding: 0 30px 0 20px;
+  transition: all 0.1s ease-in-out;
+}
+
+.nav-option:hover {
+  border-left: 5px solid #a2a2a2;
+  background-color: #dadada;
+  cursor: pointer;
+}
+
+.nav-img {
+  height: 30px;
+}
+
+.nav-upper-options {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.option1 {
+  border-left: 5px solid #010058af;
+  background-color: var(--border-color);
+  color: white;
+  cursor: pointer;
+}
+
+.option1:hover {
+  border-left: 5px solid #010058af;
+  background-color: var(--border-color);
+}
+
+.box {
+  height: 130px;
+  width: 230px;
+  border-radius: 20px;
+  box-shadow: 3px 3px 10px rgba(0, 30, 87, 0.751);
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.box:hover {
+  transform: scale(1.08);
+}
+
+.box:nth-child(1),
+.box:nth-child(3) {
+  background-color: var(--one-use-color);
+}
+
+.box:nth-child(2),
+.box:nth-child(4) {
+  background-color: var(--two-use-color);
+}
+
+.box img {
+  height: 50px;
+}
+
+.box .text {
+  color: white;
+}
+      /*table*/
+     
+      h2 {
+        color: #fbf9f9;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    #formContainer {
+        width: 50%;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    #searchInput {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+        box-sizing: border-box;
+        transition: border-color 0.3s ease-in-out;
+    }
+
+    #searchInput:focus {
+        outline: none;
+        border-color: #3498db;
+    }
+
+    #medicineTable {
+        width: 50%;
+        margin: 0 auto;
+        border-collapse: collapse;
+        background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        overflow: hidden;
+    }
+
+    #medicineTable th,
+    #medicineTable td {
+        border: 1px solid #ddd;
+        padding: 12px;
+        text-align: left;
+    }
+
+    #medicineTable th {
+        background-color:#0c007d;
+        color: #fff;
+        font-weight: bold;
+    }
+
+    #medicineTable tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+    #medicineTable td {
+        color: #555;
+    }
